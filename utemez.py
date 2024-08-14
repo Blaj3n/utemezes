@@ -21,3 +21,14 @@ print(f"Az először rögzített tábor témája: {taborok[0][-1]} ")
 print(f"Az utoljára rögzített tábor témája: {taborok[-1][-1]} ")
 # a -1 az utolsó.
 
+# 6   26    7	10	GIOSY	foci
+print("3. feladat ")
+zenei_tabor = False
+for egyelem in taborok:
+    if egyelem[-1] == "zenei":
+        print(f"Zenei tábor kezdődik {egyelem[0]}. hó {egyelem[1]}. napján. ")
+        zenei_tabor = True
+
+if not zenei_tabor:
+    print("Nem volt zenei tábor. ")
+
