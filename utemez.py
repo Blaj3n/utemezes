@@ -14,3 +14,10 @@ print(taborok)
 # egysor = egysor.strip() <- megszabadítja a felesleges "   " szóközöktől, tehát innentől kezdve a közöttes tabulátorok, ezek nem lesznek karakterként bejegyezve. A split() metódus pedig listává teszi, és innentől értelmezhetővé válik a pl.: egysor[0], egysor[5]
 # a taborokba beletesszük (append metódussal) egyenként. Ami int, azt érdemesebb már itt megnevezni, ami string, azt str.
 # taborok = [[egysor]], 6, 'GIOSY' ez lesz egyeleme az egysornak.
+
+print("2. feladat ")
+print(f"Az adatsorok száma: {len(taborok)} ")
+print(f"Az először rögzített tábor témája: {taborok[0][-1]} ")
+print(f"Az utoljára rögzített tábor témája: {taborok[-1][-1]} ")
+# a -1 az utolsó.
+
