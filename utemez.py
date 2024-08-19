@@ -32,3 +32,22 @@ for egyelem in taborok:
 if not zenei_tabor:
     print("Nem volt zenei tábor. ")
 
+
+print("4. feladat ")
+print("Legnépszerűbbek: ")
+
+legtobb_tabor = []
+for tabor in taborok:
+    legtobb_tabor.append([tabor[0], tabor[1], len(tabor[4]), tabor[5]])
+print(legtobb_tabor)
+
+jelentkezok = []
+for tabor in taborok:
+    jelentkezok.append(len(tabor[4]))
+print(f"Jelentkezők: {jelentkezok} ")
+max_jelentkezok = max(jelentkezok)
+print(max_jelentkezok)
+
+for egyelem in legtobb_tabor:
+    if egyelem[2] == max_jelentkezok:
+        print(f"{egyelem[0]} {egyelem[1]} {egyelem[-1]}")
