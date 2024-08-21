@@ -51,3 +51,14 @@ print(max_jelentkezok)
 for egyelem in legtobb_tabor:
     if egyelem[2] == max_jelentkezok:
         print(f"{egyelem[0]} {egyelem[1]} {egyelem[-1]}")
+
+# print("5. feladat ")
+
+def sorszam(honap:int, nap:int):
+    if honap == 6:
+        return nap - 16
+    elif honap == 7:
+        return (30-16) + nap
+    elif honap == 8:
+        return (30-16+32) + nap  # tehát a 0. naptól kezdődik így egyel meg lesz növelve az egész.
+print(sorszam(8,1))
