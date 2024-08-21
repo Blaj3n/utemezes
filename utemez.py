@@ -60,13 +60,14 @@ def sorszam(honap:int, nap:int):
     elif honap == 7:
         return (30-16) + nap
     elif honap == 8:
-        return (30-16+32) + nap  # tehát a 0. naptól kezdődik így egyel meg lesz növelve az egész.
-print(sorszam(8,1))
+        return (30-16+32) + nap  # tehát a 0. naptól kezdődik így egyel meg lesz növelve az egész. júni 16 az még 0.nap,
+        # majd júni 17 00:00-nál vált egy napra, tehát, egy nap már eltelt.
+print(sorszam(6,17))
 
 print("6. feladat ")
-ho = int(input("hó: "))
-napja = int(input("nap: "))
-szam = sorszam(ho, napja)
+ho = int(input("hó: ")) # 6
+napja = int(input("nap: ")) # 17
+szam = sorszam(ho, napja) # sorszam(6, 17) == 1
 print(szam)
 
 # 6	26	7	10	GIOSY	foci
