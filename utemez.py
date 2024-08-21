@@ -62,3 +62,22 @@ def sorszam(honap:int, nap:int):
     elif honap == 8:
         return (30-16+32) + nap  # tehát a 0. naptól kezdődik így egyel meg lesz növelve az egész.
 print(sorszam(8,1))
+
+print("6. feladat ")
+ho = int(input("hó: "))
+napja = int(input("nap: "))
+szam = sorszam(ho, napja)
+print(szam)
+
+# 6	26	7	10	GIOSY	foci
+
+lista = []
+for tabor in taborok:
+    lista.append([sorszam(tabor[0], tabor[1]), sorszam(tabor[2], tabor[3])])
+print(lista)
+
+szamlalo = 0
+for elem in lista:
+    if elem[0] <= szam <= elem[1]:
+        szamlalo += 1
+print(f"Ekkor éppen {szamlalo} tábor tart.")
